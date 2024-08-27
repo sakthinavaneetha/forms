@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+    
+</head>
+<body>
+    <h3 align="center">Appointment</h3>
+    <form> 
+        <h3>For all requests, please fill out the information below.</h3>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="Fill your name" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="abcd@gmail.com" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 XXXXXXXXXX" required minlength="10" maxlength="10">
+        
+        <h3>Preferable date & time?</h3>
+        <label for="date">Date</label>
+        <input type="date" id="date" name="date" required><br>
+
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" required>
+        
+
+        <h3>What is your purpose?</h3>
+        <div class="radio-group">
+            
+            <input type="radio" id="Consultations" name="purpose" value="Consultations">
+            <label for="Consultations">Consultation</label>
+
+            <input type="radio" id="Training session" name="purpose" value="Training session">
+            <label for="Training session">Training sessions</label>
+        
+            <input type="radio" id="Admission" name="purpose" value="Admission">
+            <label for="Admission">Admission</label>
+
+        </div>
+        
+        
+        <div class="message">
+
+            <h3>Any message you would like to leave?</h3>
+            <label for="message"></label>
+            <textarea type="text" id="message" name="message" placeholder="Tell us briefly about your needs."></textarea>
+        </div>
+      
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

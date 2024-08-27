@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="style1.css">
+
+</head>
+<body>
+    
+    <form>
+        <h1>Application form</h1>
+        
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" placeholder="First" required>
+        <input type="text" id="name" name="name" placeholder="Last" required>
+        
+        
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="abcd@example.com" required>
+
+        
+        <label for="Position">Position</label>
+        <select id="Position" name="Position">
+            <option >- select -</option>
+            <option value="Fullstack Developer">Fullstack Developer</option>
+            <option value="Data Analyst">Data Analyst</option>
+            <option value="ML Engineer">ML Engineer</option>
+            <option value="Cybersecurity">Cybersecurity</option>
+        </select>
+        <label for="date">Available Date</label>
+        <input type="date" id="date" name="date" required>
+
+        
+        
+        <p>What is your current employment status?</p>
+        <label for="Employed">
+        <input type="radio" id="Employed" name="status" value="Employed">Employed</label>
+        <label for="Self-Employed">
+        <input type="radio" id="Self-Employed" name="status" value="Self-Employed">Self-Employed</label>
+        <label for="Unemployed">
+        <input type="radio" id="Unemployed" name="status" value="Unemployed">Unemployed</label>
+        <label for="Student">
+        <input type="radio" id="Student" name="status" value="Student">Student</label>
+    
+        <div class="resume">
+            <p>Please provide your resume link</p>
+            <input type="text" placeholder="https://www.example.com/" required>
+
+        </div>
+
+        <div class="referance">
+            <p>Do you have any referances (optional)</p>
+            <input type="text" name="referance">
+            
+        </div>
+
+        <button type="submit">Register</button>
+        
+
+    </form>
+</body>
+</html>

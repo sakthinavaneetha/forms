@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <form>
+        <h1>Health Survey</h1>
+        <h4>Personal Information</h4>
+        <div class="name">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" required> 
+        </div>
+        <div class="name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="date">DOB</label>
+            <input type="date" id="date" name="date" required> 
+        </div>
+        <div class="radio-group">
+            <label>Gender</label>
+            <input type="radio" id="Male" name="Gender" value="Male">
+            <label for="Male">Male</label>
+            <input type="radio" id="Female" name="Gender" value="Female">
+            <label for="Female">Female</label>
+        </div>    
+        <h4>Health Questions</h4>
+        <p>1. How would you describe your overall health?</p>
+        <div class="checkbox-group">
+            <input type="checkbox" id="Excellent" name="health" value="Excellent">
+            <label for="Excellent">Excellent</label>
+            <input type="checkbox" id="VeryGood" name="health" value="Very Good">
+            <label for="VeryGood">Very Good</label>
+            <input type="checkbox" id="Good" name="health" value="Good">
+            <label for="Good">Good</label>
+            <input type="checkbox" id="Fair" name="health" value="Fair">
+            <label for="Fair">Fair</label>
+            <input type="checkbox" id="Poor" name="health" value="Poor">
+            <label for="Poor">Poor</label>
+        </div>
+    
+        <p>2. Do you have any chronic health conditions?</p>
+        <div class="checkbox-group">
+            <input type="checkbox" id="Heart" name="conditions" value="Heart">
+            <label for="Heart">Heart Disease</label>
+            <input type="checkbox" id="Diabetes" name="conditions" value="Diabetes">
+            <label for="Diabetes">Diabetes</label>
+            <input type="checkbox" id="Hypertension" name="conditions" value="Hypertension">
+            <label for="Hypertension">Hypertension</label>
+            <input type="checkbox" id="Asthma" name="conditions" value="Asthma">
+            <label for="Asthma">Asthma</label>
+            <input type="checkbox" id="Other" name="conditions" value="Other">
+            <label for="Other">Other</label>
+        </div>
+    
+        <p>3. How often do you engage in physical activity or exercise?</p>
+        <div class="checkbox-group">
+            <input type="checkbox" id="Daily" name="exercise" value="Daily">
+            <label for="Daily">Daily</label>
+            <input type="checkbox" id="3-5x" name="exercise" value="3-5x a week">
+            <label for="3-5x">3-5x a week</label>
+            <input type="checkbox" id="1-2x" name="exercise" value="1-2x a week">
+            <label for="1-2x">1-2x a week</label>
+            <input type="checkbox" id="Rarely" name="exercise" value="Rarely">
+            <label for="Rarely">Rarely</label>
+            <input type="checkbox" id="Never" name="exercise" value="Never">
+            <label for="Never">Never</label>
+        </div>
+    
+        <p>4. Do you smoke or use tobacco products?</p>
+        <div class="checkbox-group">
+            <input type="checkbox" id="Regularly" name="tobacco" value="Regularly">
+            <label for="Regularly">Regularly</label>
+            <input type="checkbox" id="Occasionally" name="tobacco" value="Occasionally">
+            <label for="Occasionally">Occasionally</label>
+            <input type="checkbox" id="NeverSmoke" name="tobacco" value="Never">
+            <label for="NeverSmoke">Never</label>
+            <input type="checkbox" id="Quit" name="tobacco" value="Quit">
+            <label for="Quit">Quit</label>
+        </div>
+    
+        <p>5. How would you rate your stress level?</p>
+        <div class="checkbox-group">
+            <input type="checkbox" id="Low" name="stress" value="Low">
+            <label for="Low">Low</label>
+            <input type="checkbox" id="Moderate" name="stress" value="Moderate">
+            <label for="Moderate">Moderate</label>
+            <input type="checkbox" id="High" name="stress" value="High">
+            <label for="High">High</label>
+            <input type="checkbox" id="VeryHigh" name="stress" value="Very High">
+            <label for="VeryHigh">Very High</label>
+            <input type="checkbox" id="None" name="stress" value="None">
+            <label for="None">None</label>
+        </div>
+    
+        <p>6. How often do you consume fruits and vegetables in your diet?</p>
+        <div class="checkbox-group">
+            <input type="checkbox" id="DailyDiet" name="diet" value="Daily">
+            <label for="DailyDiet">Daily</label>
+            <input type="checkbox" id="3-5xDiet" name="diet" value="3-5x a week">
+            <label for="3-5xDiet">3-5x a week</label>
+            <input type="checkbox" id="1-2xDiet" name="diet" value="1-2x a week">
+            <label for="1-2xDiet">1-2x a week</label>
+            <input type="checkbox" id="RarelyDiet" name="diet" value="Rarely">
+            <label for="RarelyDiet">Rarely</label>
+            <input type="checkbox" id="NeverDiet" name="diet" value="Never">
+            <label for="NeverDiet">Never</label>
+        </div>
+            <h4>Additional Comments or Concerns(optional).</h4>
+            <label for="message"></label>
+            <textarea type="text" id="message" name="message" placeholder="Your answer will be recorded for further use."></textarea>
+        <button type="submit">Submit</button>
+
+    </form>
+    
+</body>
+</html>

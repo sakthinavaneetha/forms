@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>School Trip Feedback</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <form>
+        <h1>School Trip Feedback</h1>
+        <h4>Personal Information</h4>
+        <div class="name">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <label for="class">Class</label>
+            <input type="text" id="class" name="class" required>
+        </div>
+        <div class="name">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="date">Date of Trip</label>
+            <input type="date" id="date" name="date" required>
+        </div>
+
+        <h4>Trip Feedback</h4>
+
+        <p>1. How would you rate the overall experience of the trip?</p>
+        <div class="checkbox-group">
+            <input type="checkbox" id="Excellent" name="experience" value="Excellent">
+            <label for="Excellent">Excellent</label>
+            <input type="checkbox" id="VeryGood" name="experience" value="Very Good">
+            <label for="VeryGood">Very Good</label>
+            <input type="checkbox" id="Good" name="experience" value="Good">
+            <label for="Good">Good</label>
+            <input type="checkbox" id="Fair" name="experience" value="Fair">
+            <label for="Fair">Fair</label>
+            <input type="checkbox" id="Poor" name="experience" value="Poor">
+            <label for="Poor">Poor</label>
+        </div>
+
+        <p>2. How was the quality of the transportation?</p>
+        <div class="checkbox-group">
+            <input type="checkbox" id="Comfortable" name="transportation" value="Comfortable">
+            <label for="Comfortable">Comfortable</label>
+            <input type="checkbox" id="Clean" name="transportation" value="Clean">
+            <label for="Clean">Clean</label>
+            <input type="checkbox" id="Punctual" name="transportation" value="Punctual">
+            <label for="Punctual">Punctual</label>
+            <input type="checkbox" id="Crowded" name="transportation" value="Crowded">
+            <label for="Crowded">Crowded</label>
+            <input type="checkbox" id="Uncomfortable" name="transportation" value="Uncomfortable">
+            <label for="Uncomfortable">Uncomfortable</label>
+        </div>
+
+        <p>3. How would you rate the accommodations provided during the trip?</p>
+        <div class="checkbox-group">
+            <input type="checkbox" id="ExcellentAccom" name="accommodations" value="Excellent">
+            <label for="ExcellentAccom">Excellent</label>
+            <input type="checkbox" id="GoodAccom" name="accommodations" value="Good">
+            <label for="GoodAccom">Good</label>
+            <input type="checkbox" id="FairAccom" name="accommodations" value="Fair">
+            <label for="FairAccom">Fair</label>
+            <input type="checkbox" id="PoorAccom" name="accommodations" value="Poor">
+            <label for="PoorAccom">Poor</label>
+        </div>
+
+        <p>4. Were the activities during the trip enjoyable?</p>
+        <div class="checkbox-group">
+            <input type="checkbox" id="Enjoyable" name="activities" value="Enjoyable">
+            <label for="Enjoyable">Yes, very enjoyable</label>
+            <input type="checkbox" id="SomewhatEnjoyable" name="activities" value="Somewhat Enjoyable">
+            <label for="SomewhatEnjoyable">Somewhat enjoyable</label>
+            <input type="checkbox" id="NotEnjoyable" name="activities" value="Not Enjoyable">
+            <label for="NotEnjoyable">Not enjoyable</label>
+            <input type="checkbox" id="Boring" name="activities" value="Boring">
+            <label for="Boring">Boring</label>
+        </div>
+
+        <p>5. Did you feel safe during the trip?</p>
+        <div class="checkbox-group">
+            <input type="checkbox" id="VerySafe" name="safety" value="Very Safe">
+            <label for="VerySafe">Yes, very safe</label>
+            <input type="checkbox" id="SomewhatSafe" name="safety" value="Somewhat Safe">
+            <label for="SomewhatSafe">Somewhat safe</label>
+            <input type="checkbox" id="NotSafe" name="safety" value="Not Safe">
+            <label for="NotSafe">Not safe</label>
+        </div>
+
+        <p>6. How satisfied are you with the overall organization of the trip?</p>
+        <div class="checkbox-group">
+            <input type="checkbox" id="VerySatisfied" name="satisfaction" value="Very Satisfied">
+            <label for="VerySatisfied">Very satisfied</label>
+            <input type="checkbox" id="Satisfied" name="satisfaction" value="Satisfied">
+            <label for="Satisfied">Satisfied</label>
+            <input type="checkbox" id="Neutral" name="satisfaction" value="Neutral">
+            <label for="Neutral">Neutral</label>
+            <input type="checkbox" id="Dissatisfied" name="satisfaction" value="Dissatisfied">
+            <label for="Dissatisfied">Dissatisfied</label>
+        </div>
+
+        <h4>Additional Comments or Suggestions (optional)</h4>
+        <label for="comments"></label>
+        <textarea type="text" id="comments" name="comments" placeholder="Your feedback will help us improve future trips."></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

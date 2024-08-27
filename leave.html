@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leave</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <form>
+        <h1>Leave</h1>
+        <label for="name">Student Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="regno">Register Number</label>
+        <input type="text" id="regno" name="regno" maxlength="12" pattern="\d{12}" required>
+
+        <label for="Dept">Department</label>
+        <select id="Dept" name="Dept">
+            <option>Department</option>
+            <option value="CSE">Computer Science and Engineering</option>
+            <option value="ECE">Electronics and Communication Engineering</option>
+            <option value="EEE">Electrical and Electronics Engineering</option>
+            <option value="MECH">Mechanical Engineering</option>
+            <option value="CIVIL">Civil Engineering</option>
+            <option value="IT">Information Technology</option>
+            <option value="BIO">Biomedical Engineering</option>
+        </select>
+        <label for="Year">Year</label>
+        <select id="Year" name="Year">
+            <option>Year of Study</option>
+            <option value="1st">1st Year</option>
+            <option value="2nd">2nd Year</option>
+            <option value="3rd">3rd Year</option>
+            <option value="4th">4th Year</option>
+        </select>
+
+        
+        <label for="leave">Leave from</label>
+        <input type="date" id="leave" name="leave" required>
+        <label for="leave">Leave to</label>
+        <input type="date" id="leave" name="leave" required>
+        
+        <label for="no">Parents Number</label>
+        <input type="text" id="no" name="no" maxlength="10" pattern="\d{10}" required>
+
+        <div class="message">
+            <label for="message">Why are you taking leave?</label>
+            <textarea type="text" id="message" name="message" placeholder="Your answer will be recorded for further use."></textarea>
+        </div>
+        
+        <label>Do you have enough percentage of attendance to take leave?</label>
+        <div class="radio-group">
+            <input type="radio" id="yes" name="agree" value="yes">
+            <label for="yes">Yes</label>
+            <input type="radio" id="num" name="agree" value="num">
+            <label for="num">No</label>
+        </div>
+
+
+        <label for="fileUpload">Upload the letter signed by your HOD with attendance percentage.</label>
+        <input type="file" id="fileUpload" name="fileUpload">
+
+    
+        <button type="submit">Submit</button>
+</body>
+</html>
